@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useFormik } from 'formik';
-import axios from 'axios'; // Import axios
 import uploadImagesToCloudinary from '../../API/ImageUpload';
 import showToast from '../../../utils/toaster';
 import { BASE_URL } from '../../../constants';
