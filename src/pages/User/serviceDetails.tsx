@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { BASE_URL } from '../../../constants';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -17,7 +17,6 @@ const ServiceDetails: React.FC = () => {
     const [selectedDate, setSelectedDate] = useState<Date | null>(null);
     const [showCalendar, setShowCalendar] = useState(false);
     const [availabilityMessage, setAvailabilityMessage] = useState('');
-    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchService = async () => {
