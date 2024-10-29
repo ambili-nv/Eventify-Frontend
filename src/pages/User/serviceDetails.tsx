@@ -8,7 +8,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import Header from '../../components/Navbar';
 import axiosInstance from '../../../utils/axiosInstance';
 
-const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
+const stripePromise = loadStripe("pk_test_51PaimnG8EaTCVCc3V37VRPWK4CHnrsjvdwOmKNyu6SZYIUJGBzPSJIuROfma8eqnXpQfQTOmBonXaPtiCUZBCFkx00OxC7tApr");
 
 const ServiceDetails: React.FC = () => {
     const { serviceId } = useParams<{ serviceId: string }>();
